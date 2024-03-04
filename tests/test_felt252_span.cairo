@@ -28,15 +28,12 @@ fn test_span_is_in_storage() {
     let mut current_count:u32 = 0;
 
     // iterate through and make the test
-    loop {
-        if current_count < span_length{
-            assert(
-                *example_felt_span.at(current_count) == *contract_storage_span.at(current_count),
-                'item is not the same'
-            );
-            current_count += 1;
-        } else{
-            break();
-        }
-    }
+    while current_count < span_length{
+        assert(
+            *example_felt_span.at(current_count) == *contract_storage_span.at(current_count),
+            'item is not the same'
+        );
+        current_count += 1;
+    } 
+
 }

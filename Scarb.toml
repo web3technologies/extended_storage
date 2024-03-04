@@ -1,6 +1,6 @@
 [package]
 name = "starknet_extended_storage"
-version = "0.1.0"
+version = "0.1.1"
 cairo-version = "2.5.4"
 # edition = "2023_11"
 
@@ -17,3 +17,8 @@ casm-add-pythonic-hints = true
 
 [tool.snforge]
 exit_first = true
+
+[lib]
+sierra = true        # Enable Sierra codegen.
+casm = false         # Enable CASM codegen.
+sierra-text = false  # Enable textual Sierra codegen.

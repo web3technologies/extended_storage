@@ -1,0 +1,19 @@
+[package]
+name = "extended_storage"
+version = "0.1.0"
+cairo-version = "2.5.4"
+# edition = "2023_11"
+
+
+[dependencies]
+snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry", tag = "v0.18.0" }
+starknet = "2.5.4"
+
+[[target.starknet-contract]]
+sierra = true 
+casm = true
+sierra-text = true 
+casm-add-pythonic-hints = true
+
+[tool.snforge]
+exit_first = true

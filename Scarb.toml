@@ -17,3 +17,8 @@ casm-add-pythonic-hints = true
 
 [tool.snforge]
 exit_first = true
+
+[lib]
+sierra = true        # Enable Sierra codegen.
+casm = false         # Enable CASM codegen.
+sierra-text = false  # Enable textual Sierra codegen.

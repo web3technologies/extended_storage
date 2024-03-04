@@ -1,5 +1,5 @@
 [package]
-name = "extended_storage"
+name = "starknet_extended_storage"
 version = "0.1.0"
 cairo-version = "2.5.4"
 # edition = "2023_11"

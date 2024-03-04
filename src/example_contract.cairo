@@ -7,7 +7,7 @@ pub trait IExampleContract<TContractState> {
 #[starknet::contract]
 mod ExampleContract {
 
-    use extended_storage::storage::felt252_span::StoreSpanFelt252;
+    use starknet_extended_storage::storage::felt252_span::StoreSpanFelt252;
 
     #[storage]
     struct Storage {

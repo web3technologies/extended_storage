@@ -1,10 +1,10 @@
 use starknet::ContractAddress;
 use snforge_std::{declare, ContractClassTrait};
 
-use extended_storage::example_contract::IExampleContractSafeDispatcher;
-use extended_storage::example_contract::IExampleContractSafeDispatcherTrait;
-use extended_storage::example_contract::IExampleContractDispatcher;
-use extended_storage::example_contract::IExampleContractDispatcherTrait;
+use starknet_extended_storage::example_contract::IExampleContractSafeDispatcher;
+use starknet_extended_storage::example_contract::IExampleContractSafeDispatcherTrait;
+use starknet_extended_storage::example_contract::IExampleContractDispatcher;
+use starknet_extended_storage::example_contract::IExampleContractDispatcherTrait;
 
 
 fn deploy_contract(name: felt252) -> ContractAddress {
